@@ -437,7 +437,7 @@ body{min-height:100vh;font-family:'Comic Neue',cursive;background:var(--wh);over
   <!-- STATS -->
   <div class="stat-grid">
     <div class="stat-card" style="background:var(--c)"><div class="sc-label">ANGGOTA</div><div class="sc-val">144+</div><div class="sc-sub">Yang Terbagi Ke 3 Divisi</div></div>
-    <div class="stat-card" style="background:var(--p)"><div class="sc-label">EVENTS</div><div class="sc-val">18</div><div class="sc-sub">2025-2026</div></div>
+    <div class="stat-card" style="background:var(--p)"><div class="sc-label">EVENTS</div><div class="sc-val">8</div><div class="sc-sub">2025-2026</div></div>
   </div>
 
   <!-- SOSIAL -->
@@ -462,61 +462,191 @@ body{min-height:100vh;font-family:'Comic Neue',cursive;background:var(--wh);over
 
   <!-- YouTube -->
   <div class="brow">
-    <span class="bdg" style="background:var(--r);color:var(--wh)">&#128293; TERBARU</span>
-    <a href="https://youtu.be/XaB8XA9OctE?si=WNmAZ-IuaOZO2NQd" target="_blank" class="lbtn cr" data-ono="POW!">
-      <div class="bico" style="background:#fff;border-color:rgba(255,31,31,.25)">
-        <svg viewBox="0 0 24 24" width="22" height="18"><path fill="#FF0000" d="M23.49 6.21a3.02 3.02 0 00-2.12-2.12C19.53 3.6 12 3.6 12 3.6s-7.53 0-9.37.49A3.02 3.02 0 00.51 6.21 31.6 31.6 0 000 12a31.6 31.6 0 00.51 5.79 3.02 3.02 0 002.12 2.12C4.47 20.4 12 20.4 12 20.4s7.53 0 9.37-.49a3.02 3.02 0 002.12-2.12A31.6 31.6 0 0024 12a31.6 31.6 0 00-.51-5.79z"/><path fill="#fff" d="M9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+  <a href="https://youtu.be/XaB8XA9OctE?si=WNmAZ-IuaOZO2NQd" target="_blank" style="display:block;text-decoration:none;cursor:none" data-ono="PLAY!">
+    
+    <!-- Badge kecil -->
+    <div style="margin-bottom:8px">
+      <span style="background:var(--r);color:var(--wh);padding:3px 15px;font-family:'Bangers',cursive;font-size:0.7rem;border:2px solid var(--bk);box-shadow:3px 3px 0 var(--bk);display:inline-block">▶️ TRENDING</span>
+    </div>
+    
+    <!-- Card -->
+    <div style="background:var(--bk);border:3px solid var(--bk);box-shadow:8px 8px 0 var(--y);transition:all 0.2s ease;overflow:hidden">
+      <div style="background:var(--wh);padding:15px 20px;transition:all 0.2s ease">
+        <div style="display:flex;align-items:center;gap:15px;flex-wrap:wrap;justify-content:space-between">
+          
+          <!-- Kiri: Icon + teks -->
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="background:var(--r);width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:2px solid var(--bk)">
+              <svg viewBox="0 0 24 24" width="24" height="20">
+                <path fill="#fff" d="M23.49 6.21a3.02 3.02 0 00-2.12-2.12C19.53 3.6 12 3.6 12 3.6s-7.53 0-9.37.49A3.02 3.02 0 00.51 6.21 31.6 31.6 0 000 12a31.6 31.6 0 00.51 5.79 3.02 3.02 0 002.12 2.12C4.47 20.4 12 20.4 12 20.4s7.53 0 9.37-.49a3.02 3.02 0 002.12-2.12A31.6 31.6 0 0024 12a31.6 31.6 0 00-.51-5.79z"/>
+                <path fill="#FF0000" d="M9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-family:'Bangers',cursive;font-size:1.1rem;letter-spacing:1px">Video YouTube</div>
+              <div style="font-size:0.65rem;color:#777">Tonton & subscribe guys!!</div>
+            </div>
+          </div>
+          
+          <!-- Kanan: Tombol interaktif -->
+          <div style="background:var(--y);padding:8px 18px;border:2px solid var(--bk);font-family:'Bangers',cursive;font-size:0.9rem;display:flex;align-items:center;gap:8px;transition:all 0.2s;cursor:pointer">
+            <span>▶️</span> TONTON
+            <span style="transition:transform 0.2s">→</span>
+          </div>
+          
+        </div>
       </div>
-      <span class="blbl">Video YouTube<span class="bsub">Tonton &amp; subscribe guys!!</span></span>
-      <span class="barr">&#8594;</span>
-    </a>
-  </div>
+    </div>
+    
+  </a>
+</div>
+
+<style>
+/* Hover effect */
+[data-ono="PLAY!"]:hover > div > div {
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px 0 var(--y);
+}
+[data-ono="PLAY!"]:hover .barr span:last-child {
+  transform: translateX(5px);
+}
+</style>
+
+<!-- Portal Fotobooth -->
+<div class="brow">
+  <span class="bdg" style="background:var(--y);color:var(--bk);font-size:0.9rem;letter-spacing:3px;animation:glitch 0.3s infinite">⚡ FOTOWEB ⚡</span>
+  <a href="https://giwangkaramultimedia-ofc.github.io/Fotoweb/" target="_blank" class="lbtn" style="background:repeating-linear-gradient(45deg, var(--p), var(--p) 20px, var(--c) 20px, var(--c) 40px, var(--y) 40px, var(--y) 60px);border:5px dashed var(--bk);box-shadow:12px 12px 0 var(--bk);transition:all 0.1s ease" data-ono="DOR!">
+    <div class="bico" style="background:var(--bk);color:var(--r);font-size:2rem;border:3px dotted var(--y);animation:shake 0.3s infinite">
+      🎪
+    </div>
+    <span class="blbl">
+      <span style="font-size:1.4rem;font-family:'Permanent Marker',cursive;background:var(--bk);color:var(--y);padding:0 10px;display:inline-block;transform:rotate(-2deg)">PICTURE TIME!</span>
+      <span class="bsub" style="font-size:0.7rem;color:var(--bk);font-weight:bold;background:var(--wh);display:inline-block;padding:2px 8px;margin-top:5px">🤳 SELFIE + FILTER LUCU-LUCUAN 🤳</span>
+    </span>
+    <span class="barr" style="font-size:1.8rem;animation:rotate 0.5s linear infinite">🌀</span>
+  </a>
+</div>
+
+<style>
+@keyframes glitch {
+  0% { transform: translate(0); opacity:1; }
+  20% { transform: translate(-2px, 1px); text-shadow:-1px 0 var(--r); }
+  40% { transform: translate(2px, -1px); text-shadow:1px 0 var(--c); }
+  60% { transform: translate(-1px, 2px); }
+  80% { transform: translate(1px, -2px); }
+  100% { transform: translate(0); }
+}
+@keyframes shake {
+  0%,100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
 
   <!-- TikTok -->
-  <div class="brow">
-    <a href="https://tiktok.com/@multimediasman" target="_blank" class="lbtn cbk" data-ono="ZAP!">
-      <div class="bico" style="background:#111;border-color:rgba(255,255,255,.15)">
-        <svg viewBox="0 0 24 24" width="20" height="20">
-          <path fill="#69C9D0" d="M20.09 7.19a5.33 5.33 0 01-4.17-4.7V2h-3.82v14.21a2.88 2.88 0 01-2.88 2.44 2.88 2.88 0 01-2.88-2.88 2.88 2.88 0 012.88-2.88c.28 0 .55.04.8.12V9.11a6.73 6.73 0 00-.8-.05 6.72 6.72 0 100 13.44 6.72 6.72 0 006.72-6.72V9.5a9.06 9.06 0 005.3 1.69V7.37a5.36 5.36 0 01-1.15-.18z" transform="translate(0.5,0.5)"/>
-          <path fill="#EE1D52" d="M20.09 7.19a5.33 5.33 0 01-4.17-4.7V2h-3.82v14.21a2.88 2.88 0 01-2.88 2.44 2.88 2.88 0 01-2.88-2.88 2.88 2.88 0 012.88-2.88c.28 0 .55.04.8.12V9.11a6.73 6.73 0 00-.8-.05 6.72 6.72 0 100 13.44 6.72 6.72 0 006.72-6.72V9.5a9.06 9.06 0 005.3 1.69V7.37a5.36 5.36 0 01-1.15-.18z" transform="translate(-0.5,-0.5)"/>
-          <path fill="#fff" d="M20.09 7.19a5.33 5.33 0 01-4.17-4.7V2h-3.82v14.21a2.88 2.88 0 01-2.88 2.44 2.88 2.88 0 01-2.88-2.88 2.88 2.88 0 012.88-2.88c.28 0 .55.04.8.12V9.11a6.73 6.73 0 00-.8-.05 6.72 6.72 0 100 13.44 6.72 6.72 0 006.72-6.72V9.5a9.06 9.06 0 005.3 1.69V7.37a5.36 5.36 0 01-1.15-.18z"/>
-        </svg>
-      </div>
-      <span class="blbl">TikTok Kita<span class="bsub">Follow Guys!!</span></span>
-      <span class="barr">&#8594;</span>
-    </a>
-  </div>
+<div class="brow">
+  <span class="bdg" style="background:var(--p);color:var(--wh);top:-12px;right:10px">🎶 VIRAL 🎶</span>
+  <a href="https://tiktok.com/@multimediasman" target="_blank" class="lbtn" style="background:var(--bk);border:4px solid var(--p);box-shadow:12px 12px 0 var(--p);position:relative" data-ono="DANCE!">
+    
+    <div class="bico" style="background:var(--p);color:var(--bk);border-radius:50%;width:52px;height:52px;display:flex;align-items:center;justify-content:center;position:relative">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+        <path d="M20.09 7.19a5.33 5.33 0 01-4.17-4.7V2h-3.82v14.21a2.88 2.88 0 01-2.88 2.44 2.88 2.88 0 01-2.88-2.88 2.88 2.88 0 012.88-2.88c.28 0 .55.04.8.12V9.11a6.73 6.73 0 00-.8-.05 6.72 6.72 0 100 13.44 6.72 6.72 0 006.72-6.72V9.5a9.06 9.06 0 005.3 1.69V7.37a5.36 5.36 0 01-1.15-.18z"/>
+      </svg>
+      <!-- Music wave rings -->
+      <div style="position:absolute;inset:-5px;border:2px solid var(--p);border-radius:50%;animation:ring 1.5s ease-out infinite"></div>
+      <div style="position:absolute;inset:-12px;border:2px solid var(--c);border-radius:50%;animation:ring 1.5s ease-out infinite 0.5s"></div>
+    </div>
+    
+    <span class="blbl">
+      <span style="font-size:1.3rem;font-family:'Bangers',cursive;letter-spacing:2px;color:var(--p);text-shadow:2px 2px 0 var(--bk)">@multimediasman</span>
+      <span class="bsub" style="display:flex;gap:12px;margin-top:5px">
+        <span style="background:rgba(255,110,199,0.2);padding:2px 8px;border-radius:20px">🎬  Videos</span>
+        <span style="background:rgba(0,229,255,0.2);padding:2px 8px;border-radius:20px">🔥 Trending</span>
+      </span>
+    </span>
+    
+    <span class="barr" style="display:flex;gap:5px;background:var(--p);color:var(--bk);padding:7px 15px;border-radius:25px;font-size:0.9rem">
+      <span>🎵</span> FOLLOW
+    </span>
+    
+  </a>
+</div>
+
+<style>
+@keyframes ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+</style>
 
   <!-- Instagram -->
-  <div class="brow">
-    <a href="https://www.instagram.com/giwangkaramultimedia" target="_blank" class="lbtn cp" data-ono="WOW!">
-      <div class="bico" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border-color:rgba(255,255,255,.2)">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      </div>
-      <span class="blbl">Instagram<span class="bsub">Stories &amp; reels</span></span>
-      <span class="barr">&#8594;</span>
-    </a>
-  </div>
-
+<div class="brow">
+  <span class="bdg" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:var(--wh);animation:bdgpulse 0.8s ease-in-out infinite">📸 STORIES</span>
+  <a href="https://www.instagram.com/giwangkaramultimedia" target="_blank" class="lbtn" style="background:linear-gradient(135deg, #fafafa, #fff);border:4px solid var(--bk);box-shadow:12px 12px 0 var(--bk);position:relative;overflow:hidden" data-ono="IG!">
+    
+    <!-- Efek gradien overlay -->
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(240,148,51,0.1), rgba(188,24,136,0.1));pointer-events:none"></div>
+    
+    <div class="bico" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border-radius:20px;width:52px;height:52px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px var(--bk)">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+        <path d="M12 7.162a4.838 4.838 0 100 9.676 4.838 4.838 0 000-9.676z"/>
+        <circle cx="17.5" cy="6.5" r="1.5"/>
+      </svg>
+    </div>
+    
+    <span class="blbl">
+      <span style="font-size:1.2rem;font-family:'Bangers',cursive;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:2px">@giwangkaramultimedia</span>
+      <span class="bsub" style="display:flex;gap:12px;margin-top:5px">
+        <span>📸 150+ Posts</span>
+        <span>❤️ 1k Followers</span>
+        <span>🎬 Daily Stories</span>
+      </span>
+    </span>
+    
+    <span class="barr" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:var(--wh);padding:8px 18px;border-radius:30px;font-family:'Bangers',cursive;display:flex;align-items:center;gap:6px">
+      <span>📸</span> FOLLOW
+    </span>
+    
+  </a>
+</div>
   <!-- Dokumentasi -->
-  <div class="brow">
-    <span class="bdg" style="background:var(--g);color:var(--bk)">LENGKAP</span>
-    <button id="btn-go-docs" class="lbtn cc" data-ono="BAM!">
-      <div class="bico" style="background:#fff;border-color:rgba(0,100,200,.2)">
-        <svg viewBox="0 0 87.3 78" width="24" height="21">
-          <path fill="#0066DA" d="M6.6 66.85l3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3L27.5 53H0c0 1.55.4 3.1 1.2 4.5z"/>
-          <path fill="#00AC47" d="M43.65 25L29.9 1.2C28.55-.2 26.6-.2 25.25 1.2L1.2 43.7H27.5z"/>
-          <path fill="#EA4335" d="M73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5H60.8l5.8 11.3z"/>
-          <path fill="#00832D" d="M43.65 25L57.4 1.2C56.05-.2 54.1-.2 52.75 1.2l-9.1 15.75-9.1-15.75C33.2-.2 31.25-.2 29.9 1.2z"/>
-          <path fill="#2684FC" d="M60.8 53H27.5L13.75 76.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.4 4.5-1.2z"/>
-          <path fill="#FFBA00" d="M73.35 26.45L61.05 5.2C60.25 3.8 59.1 2.7 57.75 1.9L43.65 25l17.15 28H87.3c0-1.55-.4-3.1-1.2-4.5z"/>
+<div class="brow">
+  <span class="bdg" style="background:var(--y);color:var(--bk)">🌟 LENGKAP</span>
+  
+  <button id="btn-go-docs" class="lbtn" style="background:var(--bk);border:4px solid var(--y);box-shadow:10px 10px 0 var(--y);display:flex;align-items:center;gap:15px;padding:14px 20px;transition:all 0.2s;flex-wrap:wrap;justify-content:space-between;width:100%;cursor:pointer" data-ono="BAM!">
+    
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="background:linear-gradient(135deg, #0066DA, #2684FC);width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center">
+        <svg viewBox="0 0 87.3 78" width="24" height="21" fill="white">
+          <path d="M6.6 66.85l3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3L27.5 53H0c0 1.55.4 3.1 1.2 4.5z"/>
+          <path d="M43.65 25L29.9 1.2C28.55-.2 26.6-.2 25.25 1.2L1.2 43.7H27.5z"/>
+          <path d="M73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5H60.8l5.8 11.3z"/>
+          <path d="M43.65 25L57.4 1.2C56.05-.2 54.1-.2 52.75 1.2l-9.1 15.75-9.1-15.75C33.2-.2 31.25-.2 29.9 1.2z"/>
+          <path d="M60.8 53H27.5L13.75 76.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.4 4.5-1.2z"/>
+          <path d="M73.35 26.45L61.05 5.2C60.25 3.8 59.1 2.7 57.75 1.9L43.65 25l17.15 28H87.3c0-1.55-.4-3.1-1.2-4.5z"/>
         </svg>
       </div>
-      <span class="blbl">Dokumentasi Lengkap<span class="bsub">Foto &amp; video event — lihat semua folder</span></span>
-      <span class="barr">&#8594;</span>
-    </button>
-  </div>
-
+      <div>
+        <div style="font-family:'Bangers',cursive;font-size:1rem;letter-spacing:1px;color:var(--y)">Dokumentasi Lengkap</div>
+        <div style="font-size:0.55rem;color:var(--c)">📸 Foto & video event — lihat semua folder</div>
+      </div>
+    </div>
+    
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="font-size:0.6rem;background:var(--y);color:var(--bk);padding:3px 10px;border-radius:20px">📁 8 Event</div>
+      <div style="background:var(--y);color:var(--bk);padding:6px 16px;border-radius:25px;font-family:'Bangers',cursive;font-size:0.85rem;display:flex;align-items:center;gap:5px">
+        <span>📂</span> BUKA
+        <span style="transition:transform 0.2s">→</span>
+      </div>
+    </div>
+    
+  </button>
+</div>
   <!-- QRIS -->
   <div class="sec" style="margin-top:8px"><div class="sec-line"></div><div class="sec-tag" style="background:var(--r);color:var(--wh)">PAYMENT</div><div class="sec-line"></div></div>
   <div class="qpanel">
@@ -541,7 +671,7 @@ body{min-height:100vh;font-family:'Comic Neue',cursive;background:var(--wh);over
     <div class="cico">&#9993;</div>
     <span>giwangkaramultimedia@gmail.com</span>
   </a>
-  <a href="https://wa.me/6285659828298?text=kak%20saya%20ingin%20bertanya" target="_blank" class="lbtn cg" data-ono="RING!">
+  <a href="https://wa.me/6285659828298" target="_blank" class="lbtn cg" data-ono="RING!">
       <div class="bico">&#128172;</div>
       <span class="blbl">Chat WhatsApp<span class="bsub">Hubungi kami langsung!</span></span>
       <span class="barr">&#8594;</span>
