@@ -138,7 +138,7 @@ body{min-height:100vh;font-family:'Comic Neue',cursive;background:var(--wh);over
 .mp-vol{display:flex;align-items:center;gap:8px;margin-bottom:12px}
 .mp-mute-btn{background:none;border:none;font-size:.9rem;cursor:pointer;flex-shrink:0;transition:transform .15s;color:rgba(255,230,0,.7);padding:2px}
 .mp-mute-btn:hover{transform:scale(1.2)}
-.mp-vol-slider{flex:1;-webkit-appearance:none;height:4px;background:linear-gradient(to right,var(--y) var(--vol,80%),rgba(255,230,0,.15) var(--vol,80%));outline:none;cursor:pointer;border:none}
+.mp-vol-slider{flex:1;-webkit-appearance:none;appearance:none;height:4px;background:linear-gradient(to right,var(--y) var(--vol,80%),rgba(255,230,0,.15) var(--vol,80%));outline:none;cursor:pointer;border:none}
 .mp-vol-slider::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;background:var(--y);border:2px solid var(--bk);cursor:pointer;box-shadow:0 0 5px rgba(255,230,0,.5)}
 .mp-vol-pct{font-family:'Bangers',cursive;font-size:.65rem;letter-spacing:1px;color:rgba(255,230,0,.35);width:28px;text-align:right}
 
@@ -671,8 +671,10 @@ body{min-height:100vh;font-family:'Comic Neue',cursive;background:var(--wh);over
 const DOCS_DATA=[
   {year:'2026',items:[
  {name:'Edu Fair 2026',date:'22 Januari 2026',tag:'EVENT',tagColor:'#00E5FF',drive:'https://drive.google.com/drive/folders/1QQju6YrLJDhk4YDnlJ9DT1Zry0U9Yzrf',photo:'https://img2.pixhost.to/images/7296/716488709_alip-1776611261682.jpg',isNew:true,accentColor:'#00E5FF'},    
- {name:'Ekologi 2026',date:'27 Febuari 2026',tag:'EVENT',tagColor:'#39FF14',drive:'https://drive.google.com/drive/folders/1fHGK3epqAwrvyK8djXYHPdgsgZJHnXYv',photo:'https://img2.pixhost.to/images/7296/716488746_alip-1776611274095.jpg',isNew:true,accentColor:'#39FF14'},          
-]},  
+ {name:'Ekologi 2026',date:'27 Febuari 2026',tag:'EVENT',tagColor:'#39FF14',drive:'https://drive.google.com/drive/folders/1fHGK3epqAwrvyK8djXYHPdgsgZJHnXYv',photo:'https://img2.pixhost.to/images/7296/716488746_alip-1776611274095.jpg',isNew:true,accentColor:'#39FF14'},
+ {name:'Graduation 2026',date:'7 Mei 2026',tag:'Kelulusan',tagColor:'#00E5FF',drive:'https://drive.google.com/drive/mobile/folders/1vDmNCU74sGgvp4MdyGsVEvtSeV86bM_q?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAR04FlleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacaJrMV6NkkBhWTXrYmVBqGFePH1tZc7qGtJaxeAPcw6MKRRHUCOUZglnOAxg_aem_IjP98ftUuWq26D1HSaDOFQ',photo:'https://freeimage.host/i/Bp54n3J',isNew:true,accentColor:'#00E5FF'},         
+ {name:'Kartesa 2026',date:'22 April 2026',tag:'EVENT',tagColor:'#39FF14',drive:'https://drive.google.com/drive/mobile/folders/19KmT30nWpjlEV74HsjMvvbM-Hoawm3M4?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAR04FFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadupG_VNwgt-bDVkE1Y_oQB3gX5Rd07fltrow2Ucxuu0bsTbJQxIdoyilRzgw_aem_K4MkKRfMegvg2FyGmncsbw',photo:'https://freeimage.host/i/Bp54n3J',isNew:true,accentColor:'#39FF14'},
+]}, 
   {year:'2025',items:[
     {name:'Bulan Bahasa 2025',date:'28 Oktober  2025',tag:'EVENT',tagColor:'#00E5FF',drive:'https://drive.google.com/drive/mobile/folders/1tM-Lbf9bRZUj2bkFMecCtl5lH3vOWKCz?usp=sharing&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQahI1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafl4JQQfVHuvLiho_IyhRR1uAzuqBsfDWFjgyPlMp7l63tKSxt7qxR8oszenQ_aem_3PLQobNmHNxXQNo_Y-K1xg',photo:'https://img2.pixhost.to/images/7296/716488682_alip-1776611250914.jpg',isNew:true,accentColor:'#00E5FF'},
     {name:'Fotobooth MPLS',date:'28 April 2025',tag:'EVENT',tagColor:'#39FF14',drive:'https://drive.google.com/drive/mobile/folders/1-2e3-KJ6Rt8FvOv3w5I0BXH8ORcP1LPb?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQahJhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafl4JQQfVHuvLiho_IyhRR1uAzuqBsfDWFjgyPlMp7l63tKSxt7qxR8oszenQ_aem_3PLQobNmHNxXQNo_Y-K1xg',photo:'https://img2.pixhost.to/images/7296/716503337_alip-1776614012225.jpg',accentColor:'#39FF14'},
